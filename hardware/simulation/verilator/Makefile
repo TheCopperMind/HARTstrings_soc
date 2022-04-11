@@ -41,7 +41,7 @@ VERILATOR_COVERAGE = $(VERILATOR_ROOT)/bin/verilator_coverage
 endif
 
 # Verilator flags
-VERILATOR_FLAGS += -cc --exe --build # Generate C++ in executable form and compile it after
+VERILATOR_FLAGS += -cc --exe # Generate C++ in executable form and compile it after
 #VERILATOR_FLAGS += -MMD # Generate makefile dependencies (not shown as complicates the Makefile)
 #VERILATOR_FLAGS += -Os -x-assign 0 # Optimize
 VERILATOR_FLAGS += -Wall # Enable all style warnings; may not want this on less solid designs
@@ -61,6 +61,7 @@ VERILATOR_INPUT = $(INCLUDE_VERI) $(DEFINE) $(VSRC) --top-module system_top syst
 #run the simulator
 run: $(VSRC) $(VHDR) $(IMAGES)
 	$(VERILATOR) $(VERILATOR_FLAGS) $(VERILATOR_INPUT)
+	 make -C obj_dir -f Vsystem_top.mk
 	-pkill -f console
 	-rm soc2cnsl cnsl2soc
 	$(CONSOLE_CMD) &
