@@ -1,0 +1,78 @@
+
++-----------------------------------------------+
+|                   IOb-Console                 |
++-----------------------------------------------+
+
+  BaudRate = 115200 
+  StopBits = 1 
+  Parity   = None
+
+
+IOb-Bootloader: connected!
+IOb-Bootloader: Restart CPU to run user program...
+
+
+
+Hello world!
+
+
+Value of Pi = 3.141500
+
+
+
+
++-----------------------------------------------+
+|                   IOb-Console                 |
++-----------------------------------------------+
+
+  BaudRate = 115200 
+  StopBits = 1 
+  Parity   = None
+
+
+IOb-Bootloader: connected!
+IOb-UART: requesting to receive file
+IOb-UART: file received
+IOb-Bootloader: Loading firmware...
+IOb-UART: requesting to send file
+IOb-UART: file sent
+IOb-Bootloader: Restart CPU to run user program...
+
+
+
+Hello world!
+
+
+Value of Pi = 3.141500
+
+
+
+
++-----------------------------------------------+
+|                   IOb-Console                 |
++-----------------------------------------------+
+
+  BaudRate = 115200 
+  StopBits = 1 
+  Parity   = None
+
+
+IOb-Bootloader: connected!
+IOb-Bootloader: DDR in use
+IOb-Bootloader: program to run from DDR
+IOb-UART: requesting to receive file
+IOb-UART: file received
+IOb-Bootloader: Loading firmware...
+IOb-UART: requesting to send file
+IOb-UART: file sent
+IOb-Bootloader: Restart CPU to run user program...
+
+
+
+Hello world!
+
+
+Value of Pi = 3.141500
+
+
+
